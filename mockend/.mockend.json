@@ -1,22 +1,7 @@
 {
-  "checkout": {
-    "id":{
-      "int": [
-        100,
-        200,
-        300
-      ]
-    },
-    "due_date":{
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "currency": {
-      "string": [
-        "BRL"
-      ]
+  "Checkout": {
+    "id": {
+      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
     }
   }
 }
