@@ -1,0 +1,106 @@
+:root {
+  --alto: #d7dadf;
+  --athens-gray: #e9ecf2;
+  --black: #000000;
+  --geyser: #d6e2e8;
+  --haiti: #1a1a33;
+  --oslo-gray: #808b9b;
+  --science-blue: #0050dc;
+  --shuttle-gray: #5c6574;
+  --shuttle-gray-2: #5d6675;
+  --slate-gray: #72808e;
+  --tuatara: #343434;
+  --white: #ffffff;
+
+  --font-size-l: 17px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 20px;
+  --font-size-xs: 12px;
+  --font-size-xxs: 6px;
+  --font-size-xxxs: 4px;
+
+  --font-family-poppins: "Poppins", Helvetica;
+  --font-family-proxima_nova-regular: "Proxima Nova-Regular", Helvetica;
+  --font-family-proxima_nova-semibold: "Proxima Nova-Semibold", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.proximanova-normal-oslo-gray-16px {
+  color: var(--oslo-gray);
+  font-family: var(--font-family-proxima_nova-semibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-regular-normal-slate-gray-16px {
+  color: var(--slate-gray);
+  font-family: var(--font-family-proxima_nova-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-proxima_nova-semibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-regular-normal-tuatara-16px {
+  color: var(--tuatara);
+  font-family: var(--font-family-proxima_nova-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.proximanova-normal-haiti-20px {
+  color: var(--haiti);
+  font-family: var(--font-family-proxima_nova-semibold);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-regular-normal-shuttle-gray-12px {
+  color: var(--shuttle-gray);
+  font-family: var(--font-family-proxima_nova-regular);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-normal-shuttle-gray-12px {
+  color: var(--shuttle-gray-2);
+  font-family: var(--font-family-proxima_nova-semibold);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-regular-normal-shuttle-gray-14px {
+  color: var(--shuttle-gray);
+  font-family: var(--font-family-proxima_nova-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proximanova-normal-shuttle-gray-14px {
+  color: var(--shuttle-gray-2);
+  font-family: var(--font-family-proxima_nova-semibold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}

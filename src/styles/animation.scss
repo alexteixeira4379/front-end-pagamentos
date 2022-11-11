@@ -1,0 +1,379 @@
+[class*='qs-animation-'] {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+/* Animations
+ ========================================================================== */
+/*
+ * Fade
+ */
+.qs-animation-fade {
+  animation-name: qs-fade;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+}
+/*
+ * Scale
+ */
+.qs-animation-scale-up {
+  animation-name: qs-fade-scale-02;
+}
+.qs-animation-scale-down {
+  animation-name: qs-fade-scale-18;
+}
+/*
+ * Slide
+ */
+.qs-animation-slide-top {
+  animation-name: qs-fade-top;
+}
+.qs-animation-slide-bottom {
+  animation-name: qs-fade-bottom;
+}
+.qs-animation-slide-left {
+  animation-name: qs-fade-left;
+}
+.qs-animation-slide-right {
+  animation-name: qs-fade-right;
+}
+/*
+ * Slide Small
+ */
+.qs-animation-slide-top-small {
+  animation-name: qs-fade-top-small;
+}
+.qs-animation-slide-bottom-small {
+  animation-name: qs-fade-bottom-small;
+}
+.qs-animation-slide-left-small {
+  animation-name: qs-fade-left-small;
+}
+.qs-animation-slide-right-small {
+  animation-name: qs-fade-right-small;
+}
+/*
+ * Slide Medium
+ */
+.qs-animation-slide-top-medium {
+  animation-name: qs-fade-top-medium;
+}
+.qs-animation-slide-bottom-medium {
+  animation-name: qs-fade-bottom-medium;
+}
+.qs-animation-slide-left-medium {
+  animation-name: qs-fade-left-medium;
+}
+.qs-animation-slide-right-medium {
+  animation-name: qs-fade-right-medium;
+}
+/*
+ * Kenburns
+ */
+.qs-animation-kenburns {
+  animation-name: qs-scale-kenburns;
+  animation-duration: 15s;
+}
+/*
+ * Shake
+ */
+.qs-animation-shake {
+  animation-name: qs-shake;
+}
+/*
+ * SVG Stroke
+ * The `--qs-animation-stroke` custom property contains the longest path length.
+ * Set it manually or use `qs-svg="stroke-animation: true"` to set it automatically.
+ * All strokes are animated by the same pace and doesn't end simultaneously.
+ * To end simultaneously, `pathLength="1"` could be used, but it's not working in Safari yet.
+ */
+.qs-animation-stroke {
+  animation-name: qs-stroke;
+  stroke-dasharray: var(--qs-animation-stroke);
+  animation-duration: 2s;
+}
+/* Direction modifier
+ ========================================================================== */
+.qs-animation-reverse {
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+/* Duration modifier
+ ========================================================================== */
+.qs-animation-fast {
+  animation-duration: 0.1s;
+}
+/* Toggle (Hover + Focus)
+========================================================================== */
+/*
+ * The toggle is triggered on touch devices using `:focus` and tabindex
+ */
+.qs-animation-toggle:not(:hover):not(:focus) [class*='qs-animation-'] {
+  animation-name: none;
+}
+/*
+ * 1. Prevent tab highlighting on iOS.
+ */
+.qs-animation-toggle {
+  /* 1 */
+  -webkit-tap-highlight-color: transparent;
+}
+/*
+ * Remove outline for `tabindex`
+ */
+.qs-animation-toggle:focus {
+  outline: none;
+}
+/* Keyframes used by animation classes
+ ========================================================================== */
+/*
+ * Fade
+ */
+@keyframes qs-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+ * Slide Top
+ */
+@keyframes qs-fade-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Slide Bottom
+ */
+@keyframes qs-fade-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Slide Left
+ */
+@keyframes qs-fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Slide Right
+ */
+@keyframes qs-fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Slide Top Small
+ */
+@keyframes qs-fade-top-small {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Slide Bottom Small
+ */
+@keyframes qs-fade-bottom-small {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Slide Left Small
+ */
+@keyframes qs-fade-left-small {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Slide Right Small
+ */
+@keyframes qs-fade-right-small {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Slide Top Medium
+ */
+@keyframes qs-fade-top-medium {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Slide Bottom Medium
+ */
+@keyframes qs-fade-bottom-medium {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Slide Left Medium
+ */
+@keyframes qs-fade-left-medium {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Slide Right Medium
+ */
+@keyframes qs-fade-right-medium {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Scale Up
+ */
+@keyframes qs-fade-scale-02 {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*
+ * Scale Down
+ */
+@keyframes qs-fade-scale-18 {
+  0% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*
+ * Kenburns
+ */
+@keyframes qs-scale-kenburns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+/*
+ * Shake
+ */
+@keyframes qs-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-9px);
+  }
+  20% {
+    transform: translateX(8px);
+  }
+  30% {
+    transform: translateX(-7px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  70% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  90% {
+    transform: translateX(-1px);
+  }
+}
+/*
+ * Stroke
+ */
+@keyframes qs-stroke {
+  0% {
+    stroke-dashoffset: var(--qs-animation-stroke);
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
